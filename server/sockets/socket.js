@@ -19,9 +19,13 @@ io.on('connection', (client) => {
     // Escuchar el cliente
     client.on('enviarMensaje', (data, callback) => {
 
-        console.log(data);
+        //console.log(data);
 
         client.broadcast.emit('enviarMensaje', data);
+
+        //callback({
+        //      resp: data
+        // });
 
 
         // if (mensaje.usuario) {

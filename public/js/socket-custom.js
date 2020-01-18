@@ -23,6 +23,6 @@ socket.emit('enviarMensaje', {
 // Escuchar información
 socket.on('enviarMensaje', function(mensaje) {
 
-    console.log('Servidor:', mensaje);
+    console.log('Servidor desde cliente:', mensaje);
 
 });
